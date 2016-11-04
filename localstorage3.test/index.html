@@ -1,0 +1,14 @@
+I am localstorage3.test
+<p>
+<script type="text/javascript">
+var value = localStorage.getItem('key', 'blank');
+
+if(value == 'blank' || value == null) {
+	document.write("There was nothing in my local storage. I am putting the value 'banana' there.");
+	localStorage.setItem('key', 'banana');
+} else if(value == 'banana') {
+	document.write("I found the value 'banana' in my local storage.");
+} else {
+	document.write("Soemthing went weird.  I found: " + value);
+}
+</script>
